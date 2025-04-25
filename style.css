@@ -32,7 +32,7 @@ body {
     top: 1%;
     left: 1%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(1.2rem, 3vw, 2.5rem);
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
     color: #ffffff;
 }
 
@@ -40,7 +40,7 @@ body {
 .info {
     padding: 40px;
     text-align: center;
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     line-height: 1.8;
     color: #ffffff;
 }
@@ -99,7 +99,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size:  font-size: clamp(0.8rem, 1.5vw, 1rem);
     line-height: 1.6;
 }
 
