@@ -13,16 +13,16 @@ body {
     color: #ffffff;
 }
 
-/* Logo */
+/* Logo - positioned in the top-right, slightly moved to the left */
 .logo {
     position: fixed;
     top: 1%;
-    left: 80%;
+    left: calc(100% - 100px); /* Adjust to move logo left from edge */
     z-index: 1000;
 }
 
 .logo img {
-    width: 100px; /* Smaller logo size for all screens */
+    width: 80px; /* Smaller logo size */
     height: auto;
 }
 
@@ -32,16 +32,16 @@ body {
     top: 1%;
     left: 1%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.2rem; /* Consistently small size */
+    font-size: 1rem; /* Reduced font size */
     color: #ffffff;
 }
 
 /* Info Section */
 .info {
-    padding: 20px; /* Reduced padding to avoid massive spacing */
+    padding: 20px;
     text-align: center;
-    font-size: 1rem; /* Smaller default font size */
-    line-height: 1.8;
+    font-size: 0.9rem; /* Smaller font size */
+    line-height: 1.6;
     color: #ffffff;
 }
 
@@ -50,9 +50,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Reduced gap between images */
+    gap: 40px;
     padding: 20px;
-    margin-bottom: 50px; /* Reduced margin */
+    margin-bottom: 50px;
 }
 
 .photo-grid img {
@@ -98,8 +98,8 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px; /* Reduced padding */
-    font-size: 0.9rem; /* Smaller font size */
+    padding: 10px;
+    font-size: 0.8rem; /* Reduced font size for footer */
     line-height: 1.6;
 }
 
@@ -127,19 +127,23 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo img {
-        width: 80px; /* Smaller logo for mobile */
+        width: 60px; /* Smaller logo for mobile */
     }
 
-    .photo-grid {
-        gap: 20px;
+    .top-left-text {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+
+    .info {
+        font-size: 0.7rem; /* Smaller font size for info section */
     }
 
     .footer {
-        font-size: 0.8rem; /* Further reduced font size for mobile */
+        font-size: 0.7rem; /* Smaller footer font for mobile */
         padding: 8px; /* Less padding */
     }
 
     .footer-logo img {
-        width: 100px;
+        width: 100px; /* Adjusted logo size for mobile */
     }
 }
