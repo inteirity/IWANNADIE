@@ -69,20 +69,21 @@ body {
     transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Enlarged Image */
+/* Enlarged Image Styling */
 .enlarged {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 95%;
-    max-width: 1440px;
+    width: 70%; /* Reduce the size of the enlarged image */
+    max-width: 800px; /* Maximum width for the enlarged image */
     height: auto;
     z-index: 1000;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     cursor: zoom-out;
 }
 
+/* Overlay for Enlarged Image */
 .overlay {
     position: fixed;
     top: 0;
