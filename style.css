@@ -50,14 +50,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 30px; /* Reduced gap between images */
     padding: 20px;
     margin-bottom: 50px;
 }
 
 .photo-grid img {
     width: 100%;
-    max-width: 1140px;
+    max-width: 900px; /* Reduced the max width of images */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -66,7 +66,7 @@ body {
 }
 
 .photo-grid img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 /* Enlarged Image */
