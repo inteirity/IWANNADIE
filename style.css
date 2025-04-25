@@ -22,7 +22,7 @@ body {
 }
 
 .logo img {
-    width: 150px;
+    width: 100px; /* Smaller logo size for all screens */
     height: auto;
 }
 
@@ -32,15 +32,15 @@ body {
     top: 1%;
     left: 1%;
     font-family: 'Courier New', Courier, monospace;
-    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    font-size: 1.2rem; /* Consistently small size */
     color: #ffffff;
 }
 
 /* Info Section */
 .info {
-    padding: 40px;
+    padding: 20px; /* Reduced padding to avoid massive spacing */
     text-align: center;
-    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    font-size: 1rem; /* Smaller default font size */
     line-height: 1.8;
     color: #ffffff;
 }
@@ -50,14 +50,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 40px; /* Reduced gap between images */
     padding: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px; /* Reduced margin */
 }
 
 .photo-grid img {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1140px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -98,8 +98,8 @@ body {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
-    font-size:  font-size: clamp(0.8rem, 1.5vw, 1rem);
+    padding: 10px; /* Reduced padding */
+    font-size: 0.9rem; /* Smaller font size */
     line-height: 1.6;
 }
 
@@ -120,19 +120,23 @@ body {
 }
 
 .footer-logo img {
-    width: 150px;
+    width: 120px; /* Adjusted logo size */
     height: auto;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .logo img {
-        width: 100px;
+        width: 80px; /* Smaller logo for mobile */
     }
 
     .photo-grid {
-        gap: 50px;
-        padding: 10px;
+        gap: 20px;
+    }
+
+    .footer {
+        font-size: 0.8rem; /* Further reduced font size for mobile */
+        padding: 8px; /* Less padding */
     }
 
     .footer-logo img {
